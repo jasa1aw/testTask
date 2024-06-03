@@ -1,0 +1,172 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('/img/home.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 380px;
+    box-sizing: border-box;
+}
+
+
+.home h2{
+    font-size: 34px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 58px;
+    text-align: center;
+}
+
+.searchBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+}
+.searchBox > *{
+    display: flex;
+    align-items: center;
+}
+
+.searchImage, .resources{
+    background-color: #fff;
+    border-radius: 10px;
+}
+.searchImage{
+    width: 754px;
+    padding: 4px 38px 4px 2px;
+    box-sizing: border-box;
+    gap: 10px;
+}
+.searchImage input{
+    width: 100%;
+    height: 100%;
+    font-size: 19px;
+    font-weight: 500;
+    color: #1B1B1B;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.searchImage input::placeholder{
+    font-size: 19px;
+    font-weight: 500;
+    color: #4B4B4B;
+}
+.searchImage > .icon{
+    cursor: pointer;
+}
+
+.resources{
+    height: 50px;
+    padding: 0 14px 0 38px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.resources span{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    font-weight: 500;
+    color: #1B1B1B;
+    padding-right: 24px;
+    border-right: 1px solid #029992;
+}
+.resources i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 14px;
+    cursor: pointer;
+}
+
+.popularChips{
+    display: flex;
+    justify-content: center;
+    margin-right: 715px;
+    gap: 19px;
+    margin-top: 19px;
+}
+.chips{
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 19px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .8);
+    transition: all ease-in .3s;
+}
+.chips span{
+    font-size: 17px;
+    font-weight: 500;
+    color: #1b1b1b;
+}
+.chips .icon{
+    width: 19px;
+    height: 19px;
+    display: none; /* Скрываем иконку по умолчанию */
+    transition: 0.3s ease;
+}
+
+.chips:hover{
+    background-color: #F1F1F1;
+}
+.chips:hover .icon{
+    display: flex;
+}
+
+@media(max-width:430px){
+    .home{
+        width: 430px;
+        height: 110px;
+    }
+    .home h2{
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .searchImage{
+        width: 236px;
+        height: 24px;
+        padding: 4px;
+        box-sizing: border-box;
+        gap: 10px;
+    }
+    .searchImage input{
+        font-size: 8px;
+        padding: 5px;
+    }
+    
+    .searchImage input::placeholder{
+        font-size: 8px;
+        font-weight: 500;
+        color: #4B4B4B;
+    }
+    .searchImage > .icon{
+        width: 16px;
+    }
+    .resources{
+        width: 74px;
+        height: 24px;
+        padding: 0;
+    }
+    .resources span{
+        font-size: 6px;
+        padding: 0 7px;
+    }
+    .resources i{
+        font-size: 8px;
+        padding: 0 5px;
+    }
+    .popularChips{
+        display: none;
+    }
+}

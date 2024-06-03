@@ -1,0 +1,138 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 57px 100px;
+    background-color: #00403D;
+    box-sizing: border-box;
+}
+footer > *{
+    color: #fff;
+}
+.upperBlock{
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #fff;
+}
+.footerItems{
+    display: flex;
+    gap: 100px;
+}
+.footerItem h4{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.footerItem ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 14px;
+}
+.footerItem ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact h4{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+.contact input{
+    width: 360px;
+    box-sizing: border-box;
+    padding: 15px 5px;
+    font-size: 19px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+}
+.contact input::placeholder{
+    color: #fff;
+}
+
+.lowerBlock{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 5px;
+}
+.lowerBlock span{
+    font-size: 16px;
+    font-weight: 400;
+}
+.contact2{
+    display: none;
+}
+
+@media(max-width:1360px){
+    .upperBlock{
+        gap: 10%;
+    }
+}
+
+@media(max-width:1270px){
+    footer{
+        padding: 57px 50px;
+    }
+}
+
+
+@media(max-width:1150px){
+    footer > *{
+        font-size: 14px;
+    }
+    .upperBlock{
+        gap: 5%;
+    }
+}
+
+@media(max-width:430px){
+    footer{
+        padding: 32px 65px;
+    }
+    footer > *{
+        color: #fff;
+    }
+    .upperBlock{
+        flex-direction: column;
+        align-items: unset;
+        gap: 0;
+        margin-bottom: 50px;
+    }
+    .footerItems{
+        flex-direction: column;
+        gap: 32px;
+    }
+    .footerItem h4{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .contact{
+        display: none;
+    }
+    .contact2{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .contact2 span{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .lowerBlock{
+        margin-top: 32px;
+        gap: 16px;
+    }
+}

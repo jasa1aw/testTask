@@ -1,0 +1,9 @@
+@import url(vendor/reset.css);
+@import url(vendor/base.css);
+@import url(components/header.css);
+@import url(components/home.css);
+@import url(components/registerBanner.css);
+@import url(components/popularCateg.css);
+@import url(components/advantages.css);
+@import url(components/authorBanner.css);
+@import url(components/footer.css);

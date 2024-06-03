@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Test</title>
+		<link rel="stylesheet" href="style/all.css" />
+		<script
+			src="https://kit.fontawesome.com/9896f79fa4.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+                <div class="logo">
+                    <img src="/img/logo.svg" alt="not found" class="imgFit">
+                </div>
+				<h1>PICTURA</h1>
+				<ul class="pages">
+					<li>Фотографии <i class="fa-solid fa-chevron-down" style="color: #00403d" ></i></li>
+					<li>Дизайн <i class="fa-solid fa-chevron-down" style="color: #00403d" ></i></li>
+					<li>GIF <i class="fa-solid fa-chevron-down" style="color: #00403d" ></i></li>
+					<li>О нас <i class="fa-solid fa-chevron-down" style="color: #00403d" ></i></li>
+				</ul>
+				<div class="user">
+					<button class="button">Войти</button>
+					<button class="button buttonFill">Создать аккаунт</button>
+				</div>
+                <div class="button-adaptive" >
+                    <div class="menu" onclick="openBurgerMenu()">
+                        <img src="/img/burgerMenu.svg" alt="">
+                    </div>
+                    <div class="burgerMenuBackground" onclick="closeBurgerMenu()">
+                        <div id="burger-menu">
+                            <ul class="menu-item">
+                                <li>Фотографии</li>
+                                <li>Дизайн</li>
+                                <li>GIF</li>
+                                <li>О нас</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+			</header>
+            <main>
+                <section class="home">
+                    <h2>Найдите ресурсы под любые запросы!</h2>
+                    <div class="searchBox">
+                        <div class="searchImage">
+                            <input type="text" placeholder="Поиск изображений..." />
+                            <div class="icon">
+                                <img class="imgFit" src="/img/searchIcon.svg" alt="not found" />
+                            </div>
+                        </div>
+                        <div class="resources">
+                            <span>Все ресурсы</span>
+                            <i class="fa-solid fa-chevron-down" style="color: #029992" ></i>
+                        </div>
+                    </div>
+                    <div class="popularChips">
+                        <div class="chips">
+                            <div class="icon">
+                                <img src="/img/search2.svg" alt="" class="imgFit" />
+                            </div>
+                            <span>Узоры</span>
+                        </div>
+                        <div class="chips">
+                            <div class="icon">
+                                <img src="/img/search2.svg" alt="" class="imgFit" />
+                            </div>
+                            <span>Леса</span>
+                        </div>
+                        <div class="chips">
+                            <div class="icon">
+                                <img src="/img/search2.svg" alt="" class="imgFit" />
+                            </div>
+                            <span>Поля</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="registerBannerContainer">
+                    <div class="registerBanner">
+                        <h3>
+                            Присоединяйтесь и загружайте больше бесплатных
+                            изображений!
+                        </h3>
+                        <button class="button buttonBordered">Создать аккаунт</button>
+                    </div>
+                </section>
+                <section class="popularCateg">
+                    <h2>
+                        <b>Погрузитесь в мир</b>
+                        популярных категорий!
+                    </h2>
+                    <div class="categBox">
+                        <div class="cardBox">
+                            <div class="cardHeader">
+                                <h4>Популярные фотографии</h4>
+                                <button class="button">Смотреть еще <i class="fa-solid fa-chevron-right" style="color: #029992"></i></button>
+                            </div>
+                            <div class="cardContainer">
+                                <div class="cardItem">
+                                    <div class="cardImg">
+                                        <img class="imgFit" src="/img/picture.svg" alt="not Found" />
+                                    </div>
+                                    <h5>Сосновый бор</h5>
+                                    <p>Лидия</p>
+                                </div>
+                                <div class="cardItem">
+                                    <div class="cardImg">
+                                        <img class="imgFit" src="/img/picture2.svg" alt="not Found" />
+                                    </div>
+                                    <h5>Утро в лесу</h5>
+                                    <p>Анатолий</p>
+                                </div>
+                                <div class="cardItem">
+                                    <div class="cardImg">
+                                        <img class="imgFit" src="/img/picture3.svg" alt="not Found" />
+                                    </div>
+                                    <h5>Рассвет в роще</h5>
+                                    <p>Василий</p>
+                                </div>
+                                <div class="cardItem">
+                                    <div class="cardImg">
+                                        <img class="imgFit" src="/img/picture4.svg" alt="not Found" />
+                                    </div>
+                                    <h5>Пасмурная погода в холмах</h5>
+                                    <p>Ларион</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardBox">
+                            <div class="cardHeader">
+                                <h4>Популярные GIF</h4>
+                                <button class="button">Смотреть еще <i class="fa-solid fa-chevron-right" style="color: #029992"></i></button>
+                            </div>
+                            <div class="cardContainer">
+                                <div class="cardItem">
+                                    <div class="cardImg">
+                                        <img class="img" src="/img/gif.svg" alt="not Found" />
+                                    </div>
+                                    <h5>Инопланетянин</h5>
+                                    <p>Георгий</p>
+                                </div>
+                                <div class="cardItem">
+                                    <div class="cardImg">
+                                        <img class="img" src="/img/gif2.svg" alt="not Found" />
+                                    </div>
+                                    <h5>Пикачу</h5>
+                                    <p>Максим</p>
+                                </div>
+                                <div class="cardItem">
+                                    <div class="cardImg">
+                                        <img class="img" src="/img/gif3.svg" alt="not Found" />
+                                    </div>
+                                    <h5>Ребёнок на лужайке</h5>
+                                    <p>Анна</p>
+                                </div>
+                                <div class="cardItem">
+                                    <div class="cardImg">
+                                        <img class="img" src="/img/gif4.svg" alt="not Found" />
+                                    </div>
+                                    <h5>Эволюция</h5>
+                                    <p>Егор</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardBox">
+                            <div class="cardHeader">
+                                <h4>Популярные наборы иконок</h4>
+                                <button class="button">Смотреть еще <i class="fa-solid fa-chevron-right" style="color: #029992"></i></button>
+                            </div>
+                            <div class="cardContainer">
+                                <div class="cardItem">
+                                    <div class="cardImg">
+                                        <img class="imgFit" src="/img/iconPack.svg" alt="not Found" />
+                                    </div>
+                                    <h5>Угловатые пиктограммы</h5>
+                                    <p>Григорий</p>
+                                </div>
+                                <div class="cardItem">
+                                    <div class="cardImg">
+                                        <img class="imgFit" src="/img/iconPack2.svg" alt="not Found" />
+                                    </div>
+                                    <h5>Офисные иконки</h5>
+                                    <p>Мирослав</p>
+                                </div>
+                                <div class="cardItem">
+                                    <div class="cardImg">
+                                        <img class="imgFit" src="/img/iconPack3.svg" alt="not Found" />
+                                    </div>
+                                    <h5>Округлые иконки</h5>
+                                    <p>Анастасия</p>
+                                </div>
+                                <div class="cardItem">
+                                    <div class="cardImg">
+                                        <img class="imgFit" src="/img/iconPack4.svg" alt="not Found" />
+                                    </div>
+                                    <h5>Стильные иконки</h5>
+                                    <p>Валентин</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="advantages">
+                    <h2><b>Идеальный</b> вариант для развития творчества</h2>
+                    <p>
+                        Независимо от того, ищете ли вы готовые дизайны или
+                        захватывающие фотографии, здесь всегда найдете источник
+                        вдохновения
+                    </p>
+                    <div class="advantagesCard">
+                        <div class="advantagesCardItem">
+                            <div class="icon">
+                                <img src="/img/authorIcon.svg" alt="not found" />
+                            </div>
+                            <div class="content">
+                                <h3>Качественный авторский контент</h3>
+                                <p>
+                                    Поднимите ваши проекты на новый уровень, добавив
+                                    великолепные изображения, видео или анимации в
+                                    высоком качестве.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="advantagesCardItem">
+                            <div class="icon">
+                                <img src="/img/bricksIcon.svg" alt="not found" />
+                            </div>
+                            <div class="content">
+                                <h3>Готовые ресурсы</h3>
+                                <p>
+                                    Погрузитесь в огромный арсенал изображений и
+                                    необычных решений на любой вкус, который может
+                                    восхитить любую публику.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="advantagesCardItem">
+                            <div class="icon">
+                                <img src="/img/loupe.svg" alt="not found" />
+                            </div>
+                            <div class="content">
+                                <h3>Детальный поиск</h3>
+                                <p>
+                                    Каждый проект обретет свою уникальную визуальную
+                                    концепцию и стиль, способные воплотить любые из
+                                    ваших потребностей и фантазий.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="advantagesCardItem">
+                            <div class="icon">
+                                <img src="/img/refreshIcon.svg" alt="not found" />
+                            </div>
+                            <div class="content">
+                                <h3>Постоянные обновления</h3>
+                                <p>
+                                    В нашей библиотеке всегда найдется что-то новое
+                                    и вдохновляющее, благодаря ежедневным
+                                    обновлениям и пополнениям.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="authorBannerContainer">
+                    <div class="authorBanner">
+                        <div class="authorBannerImg">
+                            <img class="imgFit" src="/img/picture5.svg" alt=" not found" />
+                        </div>
+                        <div class="content">
+                            <h2>Присоединяйтесь к сообществу <b>авторов!</b></h2>
+                            <p>
+                                За каждым обыденным изображением скрыто творческое
+                                вдохновение. И помните, что в ваших силах не только
+                                воплотить уникальный контент в жизнь, но и с легкостью
+                                представить его миру, как для бесплатного использования,
+                                так и для продажи!
+                            </p>
+                            <button class="button buttonBordered">Стать автором <i class="fa-solid fa-chevron-right" style="color: #029992"></i></button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <div class="upperBlock">
+                    <div class="footerItems">
+                        <div class="footerItem">
+                            <h4>«PICTURA»</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-chevron-right" style="color: #fff"></i> О нас</li>
+                                <li><i class="fa-solid fa-chevron-right" style="color: #fff"></i> FAQ</li>
+                                <li><i class="fa-solid fa-chevron-right" style="color: #fff"></i> Реквизиты</li>
+                                <li><i class="fa-solid fa-chevron-right" style="color: #fff"></i> Вакансии</li>
+                                <li><i class="fa-solid fa-chevron-right" style="color: #fff"></i> Связаться с нами</li>
+                            </ul>
+                        </div>
+                        <div class="footerItem">
+                            <h4>Условия пользования</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-chevron-right" style="color: #fff"></i> Об авторском праве</li>
+                                <li><i class="fa-solid fa-chevron-right" style="color: #fff"></i> Приложения</li>
+                                <li><i class="fa-solid fa-chevron-right" style="color: #fff"></i> Конфиденциальность</li>
+                                <li><i class="fa-solid fa-chevron-right" style="color: #fff"></i> Политика файлов Cookie</li>
+                                <li><i class="fa-solid fa-chevron-right" style="color: #fff"></i> Партнерская программа</li>
+                            </ul>
+                        </div>
+                        <div class="footerItem">
+                            <h4>Клиентам</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-chevron-right" style="color: #fff"></i> Услуги</li>
+                                <li><i class="fa-solid fa-chevron-right" style="color: #fff"></i> Акции</li>
+                                <li><i class="fa-solid fa-chevron-right" style="color: #fff"></i> Специальные предложения</li>
+                                <li><i class="fa-solid fa-chevron-right" style="color: #fff"></i> Подписка</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <h4>
+                            Подписывайтесь на рассылку, <br>
+                            чтобы быть в курсе последних <br>
+                            новостей и обновлений!
+                        </h4>
+                        <input type="text" placeholder="Адрес электронной почты">
+                        <button class="button buttonFill">Подписаться</button>
+                    </div>
+                </div>
+                <div class="contact2">
+                    <span>+7 916 486 5555</span>
+                    <span>info@pictura.ru</span>
+                </div>
+                <div class="lowerBlock">
+                    <span>© 2024, «PICTURA»</span>
+                    <span>Все права защищены</span>
+                </div>
+            </footer>
+		</div>
+	</body>
+    <script src="script/burgerMenu.js"></script>
+</html>

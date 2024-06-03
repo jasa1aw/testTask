@@ -1,0 +1,121 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 100px;
+    position: relative;
+}
+
+header > *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    font-size: 52px;
+    font-weight: 700;
+    color: #029992;
+}
+.logo{
+    display: none;
+}
+
+header ul{
+    gap: 58px;
+}
+header ul li{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+header ul li i{
+    color: #00403D;
+}
+
+
+.button-adaptive{
+    display: none;
+}
+.burgerMenuBackground{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+#burger-menu{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 262px;
+    height: 930px;
+    padding: 48px 35px;
+    background-color: #00403D;
+    z-index: 5;
+    box-sizing: border-box;
+}
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.menu-item li{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+.open-menu{
+    display: flex;
+}
+
+@media(max-width:1360px){
+    header ul{
+        gap: 40px;
+    }
+}
+@media(max-width:1270px){
+    header{
+        padding: 24px 50px;
+    }
+    
+    header ul{
+        gap: 40px;
+    }
+}
+
+@media(max-width:1170px){
+    header h1{
+        font-size: 32px;
+    }
+    header ul li{
+        font-size: 16px;
+    }
+    header button{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:430px){
+    header{
+        margin-bottom: 30px;
+    }
+    header h1, .pages, .user{
+        display: none;
+    }
+    header .logo, .button-adaptive{
+        display: flex;
+    }
+}
+

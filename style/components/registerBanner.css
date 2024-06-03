@@ -1,0 +1,43 @@
+.registerBannerContainer{
+    display: flex;
+    justify-content: center;
+    margin: 58px 0;
+}
+
+.registerBanner{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 58px;
+    padding: 20px 60px;
+    background-color: #CEDFD5;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.registerBanner h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #00403D;
+}
+
+@media(max-width:430px){
+    .registerBannerContainer{
+        margin: 32px 26px;
+    }
+    .registerBanner{
+        gap: 18px;
+        padding: 18px 16px;
+    }
+    .registerBanner h3{
+        font-size: 12px;
+        text-align: center;
+    }
+    .registerBanner button{
+        width: 112px;
+        height: 33px;
+        font-size: 8px;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+}
