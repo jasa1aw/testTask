@@ -9,6 +9,9 @@ html, body{
 main{
     flex: 1 1 auto;
 }
+button{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 .button{
     display: flex;
     align-items: center;

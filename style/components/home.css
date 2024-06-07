@@ -1,4 +1,5 @@
 .home{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,9 +125,58 @@
     display: flex;
 }
 
-@media(max-width:430px){
+@media(max-width:1200px){
+    .searchBox{
+        gap: 10px;
+    }
+    .searchImage{
+        width: 500px;
+    }
+    .popularChips{
+        margin-right: 450px;
+    }
+
+}
+@media(max-width:760px){
+    .searchImage{
+        width: 400px;
+    }
+    .popularChips{
+        margin-right: 350px;
+    }
+
+}
+@media(max-width:650px){
+    .searchImage{
+        width: 300px;
+    }
+    .popularChips{
+        margin-right: 250px;
+    }
+
+}
+
+@media(max-width:550px){
+    .searchImage{
+        width: 250px;
+    }
+    .searchImage input{
+        font-size: 14px;
+    }
+    .searchImage input::placeholder{
+        font-size: 14px;
+    }
+    .popularChips{
+        margin-right: 200px;
+    }
+    .resources{
+        height: 44px;
+    }
+}
+
+@media(max-width:500px){
     .home{
-        width: 430px;
+        /* width: 430px; */
         height: 110px;
     }
     .home h2{
